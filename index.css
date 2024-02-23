@@ -1,0 +1,322 @@
+/* Body */
+
+body {
+    font-family: 'Ubuntu';
+    height: 860px;
+    width: auto;
+    margin: 0;
+    padding: 2%;
+    background: linear-gradient(to right, rgb(41, 41, 41), rgb(26, 26, 26));
+}
+
+/* Heading */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }   
+    to {
+        opacity: 1;
+    }
+}
+
+div.heading {
+    animation: fade-in 1s forwards;
+    width: auto;
+    background: linear-gradient(to right, rgb(161, 116, 57), rgb(126, 73, 4));
+    height: 120px; 
+    border-radius: 18px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+h1.title {
+    font-size: 40px;
+    margin-left: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: white;
+    height: 40px;
+}
+
+#trees {
+    margin-right: 10px;
+    background: linear-gradient(to right, rgb(17, 224, 103), rgb(54, 192, 111));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#men {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(248, 223, 154);
+}
+
+#navigate-a {
+    margin-left: auto;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+@keyframes slide-in-right {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+#navigate-bar {
+    animation: slide-in-right 1s ease forwards;
+    animation-delay: 1s;
+    align-items: center;
+    background: transparent;
+    background: linear-gradient(to left,  rgb(241, 192, 30) 50%, transparent 50%) left;
+    background-size: 200%;
+    border-radius: 13.5px;
+    display: flex;
+    height: 70px;
+    width: 170px;
+    justify-content: center;
+}
+
+@keyframes text-fade-in {
+    0% {
+        opacity: 0;
+    }   
+    100% {
+        opacity: 1;
+    }
+}
+
+#credit-page {
+    opacity: 0;
+    animation: text-fade-in 0.8s forwards;
+    animation-delay: 1.4s;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#credit-page:hover {
+    color: rgb(161, 116, 57);
+    text-underline-offset: 0.25em;
+    text-decoration: underline rgb(161, 116, 57);
+}
+
+/* Main Contents */
+
+@keyframes expand {
+    to {width: 1500px;}
+}
+
+#page1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fade-in-up {
+    0% {
+        display: flex;
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes title-fade-in-left {
+    0% {
+        opacity: 0; 
+    }
+    50% {
+        display: flex;
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        transform: translateX(30px);
+    }
+}
+
+#content-title {
+    margin-top: 200px;
+    opacity: 0;
+    animation: title-fade-in-left 4s forwards;
+    transform: translateY(10px);
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(253, 255, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#p-title {
+    width: auto;
+    font-size: 52.5px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, rgb(105, 105, 105), rgb(102, 102, 102));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#box1 {
+    display: none;
+    animation: fade-in-up 0.5s ease forwards;
+    opacity: 0;
+    width: 1200px;
+    height: 630px;
+    background: linear-gradient(to left, #98f34e, #2C5F2D);
+    border-radius: 10px;
+    transform: translateY(-10px);
+    justify-content: center;
+    padding: 3%;
+    transition: all 0.7s ease;
+}
+
+#img1 {
+    height: 460px;
+    width: 480px;
+    border-radius: 10px;
+    margin-right: 100px;
+    box-shadow: 14px 14px rgb(179, 148, 11, 0.6), 18px 18px rgb(0, 0, 0, 0.5);
+}
+#img2 {
+    height: 460px;
+    width: 480px;;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: 100px;
+    box-shadow: 14px 14px rgb(179, 148, 11, 0.6), 18px 18px rgb(0, 0, 0, 0.5);
+}
+
+#box2 {
+    margin-top: 100px;
+    display: flex;
+    width: 1272px;
+    height: 630px;
+    background: linear-gradient(135deg, #31473A 50%, #fad169 50%);
+    backdrop-filter: blur(500px);
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s ease ;
+}
+
+#idk {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#txt1 {
+    width: fit-content;
+    font-size: 55px;
+    margin-left: 15px;
+    background: rgb(255, 255, 255, 0.7);
+}
+
+#content {
+    display: none;
+}
+
+#box3 {
+    margin-top: 100px;
+    display: flex;
+    width: 1272px;
+    height: 630px;
+    background: linear-gradient(to left, rgb(161, 131, 49), rgb(116, 99, 8));
+    border-radius: 10px;
+    transform: translateY(-10px);
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+li {
+    font-size: 40px;
+    margin-left: 22.5px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-shadow: 2px 2px gray;
+    list-style-type: "🤯";
+}
+
+#li-grp1 {
+    margin-bottom: auto;
+}
+
+.orange {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 3px 3px orange, 3.5px 3.5px black;
+}
+
+.blue {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(95, 212, 228), 3.5px 3.5px black;
+}
+
+.red {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 3px 3px red, 3.5px 3.5px black;
+}
+
+.yellow {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(199, 196, 34), 3.5px 3.5px black;
+}
+
+.gray {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(141, 141, 141), 3.5px 3.5px black;
+}
+
+#box4 {
+    margin-top: 100px;
+    display: flex;
+    width: 1272px;
+    height: 630px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    transform: translateY(-10px);
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+#txt2 {
+    font-size: 60px;
+    margin-left: 25px;
+    font-weight: 550;
+    color: white;
+    text-shadow: -1px -1px black, 2px 2px black, 4px 4px yellow, 6px 6px black;
+    width: fit-content;
+}
+
+#idk2 {
+    margin-bottom: auto;
+}
+
+.li-grp2 {
+    font-size: 60px;
+    width: fit-content;
+}
